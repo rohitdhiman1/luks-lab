@@ -1,6 +1,6 @@
 # Lab 11: Rotate a keyfile safely
 
-[← Lab 10](10-unlock-at-boot.md) · [Home](../README.md)
+[← Lab 10](10-unlock-at-boot.md) · [Home](../README.md) · Next: [Lab 12 →](12-recover-a-locked-out-disk.md)
 
 **Goal:** replace the keyfile on a live, mounted volume without ever risking the data: add the new key, prove it works, and only then remove the old one.
 

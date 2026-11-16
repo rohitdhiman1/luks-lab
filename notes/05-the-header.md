@@ -30,13 +30,18 @@ Store header backups as carefully as you would store the passphrase itself.
 
 ## Erasing by destroying keys
 
-`cryptsetup luksErase` wipes all keyslots. The ciphertext stays on disk but can never be decrypted. This is far faster than overwriting a whole disk.
+`cryptsetup luksErase` wipes all keyslots. The ciphertext stays on disk, but nobody can decrypt it unless they hold a header backup or a copy of the master key. This is far faster than overwriting a whole disk.
 
 ## Detached headers
 
 The header does not have to live on the data disk. With `--header <file>` it is kept in a separate file, and the data disk then contains nothing but ciphertext, with no sign that it is LUKS at all.
 
+## When the master key is kept elsewhere
+
+"Lose the header, lose the data" holds when the header was the only place the master key existed, which is the usual case. If the master key was exported beforehand, the data can still be reached without the header. See [Case study, part 4: escrow and recovery](case-study-kafka-recovery.md).
+
 ## Try it
 
 - [Lab 4: Header backup, destruction and restore](../labs/04-header-backup-restore.md)
 - [Lab 7: Detached header](../labs/07-detached-header.md)
+- [Lab 12: Recover a locked-out disk](../labs/12-recover-a-locked-out-disk.md)

@@ -1,6 +1,6 @@
 # Case study, part 3: rotating the keyfile on the Kafka broker
 
-[← Home](../README.md) · Part 1: [The layers](case-study-kafka-broker.md) · Part 2: [How the keys work](case-study-kafka-keys.md) · Hands-on: [Lab 11](../labs/11-rotate-a-keyfile.md)
+[← Home](../README.md) · Part 1: [The layers](case-study-kafka-broker.md) · Part 2: [How the keys work](case-study-kafka-keys.md) · Part 4: [Escrow and recovery](case-study-kafka-recovery.md) · Hands-on: [Lab 11](../labs/11-rotate-a-keyfile.md)
 
 The security team needs to replace the keyfile on a broker that holds 2 TB of Kafka data. The change takes seconds, not hours, and Kafka keeps running. This part explains why that is possible, and why the order of the commands matters so much.
 

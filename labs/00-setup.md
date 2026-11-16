@@ -61,8 +61,8 @@ Use `printf`, not `echo`: with `--key-file -` a trailing newline becomes part of
 Run this before leaving the container. Device-mapper names and loop devices belong to the kernel, not the container, so they can outlive it.
 
 ```bash
-umount /mnt/vault /mnt/plain /data/kafka 2>/dev/null
-for m in vault vault2 oldvault kafka; do cryptsetup close $m 2>/dev/null; done
+umount /mnt/vault /mnt/plain /data/kafka /mnt/safe 2>/dev/null
+for m in vault vault2 oldvault kafka safe rescue; do cryptsetup close $m 2>/dev/null; done
 losetup -D
 exit
 ```
