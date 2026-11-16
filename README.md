@@ -47,6 +47,10 @@ Short concept notes, in [`notes/`](notes/).
 6. [The layers](notes/06-the-layers.md): from image file to mount point
 7. [LUKS1 vs LUKS2](notes/07-luks1-vs-luks2.md)
 
+### Case studies
+
+- [An encrypted data disk on a Kafka broker](notes/case-study-kafka-broker.md): the same layers on a real server, and why an always-open volume is not a security hole
+
 ## Labs
 
 Step-by-step exercises, in [`labs/`](labs/).

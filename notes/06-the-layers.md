@@ -33,6 +33,10 @@ An encrypted filesystem is a stack. Each layer sits on the one above it in this 
 
 To grow an encrypted filesystem you resize from the outside in: the underlying device, then the dm-crypt mapping, then the filesystem.
 
+## On a real server
+
+[Case study: an encrypted data disk on a Kafka broker](case-study-kafka-broker.md) shows this same stack with a physical disk in place of the image file.
+
 ## Try it
 
 - [Lab 2: Open, use, close](../labs/02-open-use-close.md)
