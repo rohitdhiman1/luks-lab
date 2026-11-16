@@ -31,7 +31,7 @@ Type `YES` to confirm. No passphrase is asked for: destroying keys needs no secr
 cryptsetup luksDump disk.img
 ```
 
-The **Keyslots** and **Digests** sections are empty. Try to open it:
+The **Keyslots** section is empty. (The digest, the master key's fingerprint, is still listed, but a fingerprint cannot be turned back into a key.) Try to open it:
 
 ```bash
 cryptsetup open disk.img vault
