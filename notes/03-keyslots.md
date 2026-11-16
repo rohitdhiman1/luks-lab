@@ -29,4 +29,5 @@ A keyslot does not care what unlocks it. A **keyfile** is simply a file whose co
 
 ## Try it
 
-[Lab 3: Keyslots](../labs/03-keyslots.md)
+- [Lab 3: Keyslots](../labs/03-keyslots.md)
+- [Lab 11: Rotate a keyfile safely](../labs/11-rotate-a-keyfile.md)

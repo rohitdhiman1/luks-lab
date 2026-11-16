@@ -1,6 +1,6 @@
 # Lab 10: Unlocking at boot (reading only)
 
-[← Lab 9](09-performance-and-ciphers.md) · [Home](../README.md)
+[← Lab 9](09-performance-and-ciphers.md) · [Home](../README.md) · Next: [Lab 11 →](11-rotate-a-keyfile.md)
 
 **Goal:** understand how a real system opens LUKS volumes when it starts.
 
@@ -52,6 +52,8 @@ cryptsetup luksUUID disk.img
 
 This prints the UUID you would put in `crypttab`. It matches the `UUID:` line in `cryptsetup luksDump disk.img`.
 
-## Done
+## Next
 
-Test yourself with the [self-test](../notes/self-test.md), then run the [full cleanup](00-setup.md#full-cleanup) before leaving the container.
+[Lab 11: Rotate a keyfile safely](11-rotate-a-keyfile.md) puts keyslots to work in a realistic procedure.
+
+When you have finished the labs, test yourself with the [self-test](../notes/self-test.md), then run the [full cleanup](00-setup.md#full-cleanup) before leaving the container.
