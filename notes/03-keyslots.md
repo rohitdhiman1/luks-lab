@@ -23,6 +23,10 @@ Every slot holds the *same* master key. They are different doors into the same r
 
 A keyslot does not care what unlocks it. A **keyfile** is simply a file whose contents are used as the passphrase, typically random bytes. Keyfiles allow unlocking without a prompt, which suits scripts and boot-time unlocking.
 
+## The full picture
+
+[Case study: how the keys work on the Kafka broker](case-study-kafka-keys.md) explains what is inside a keyslot and how it is locked and opened.
+
 ## Try it
 
 [Lab 3: Keyslots](../labs/03-keyslots.md)

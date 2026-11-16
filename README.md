@@ -50,6 +50,7 @@ Short concept notes, in [`notes/`](notes/).
 ### Case studies
 
 - [An encrypted data disk on a Kafka broker](notes/case-study-kafka-broker.md): the same layers on a real server, and why an always-open volume is not a security hole
+- [How the keys work on the Kafka broker](notes/case-study-kafka-keys.md): what format and open do, what the header holds, with flowcharts
 
 ## Labs
 

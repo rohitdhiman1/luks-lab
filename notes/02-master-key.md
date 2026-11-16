@@ -19,6 +19,10 @@ Your data is encrypted with a random **master key**, also called the **volume ke
 
 The header stores a **digest**: a fingerprint of the master key. When a passphrase unlocks a candidate key, LUKS fingerprints it and compares. A match means the passphrase was correct. The digest also changes whenever the master key changes, which makes it a handy way to confirm a re-encryption happened.
 
+## The full picture
+
+[Case study: how the keys work on the Kafka broker](case-study-kafka-keys.md) walks through format and open step by step, with flowcharts.
+
 ## Try it
 
 - [Lab 1](../labs/01-create-and-inspect.md): find the digest in the header
