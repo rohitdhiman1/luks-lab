@@ -10,6 +10,8 @@ LUKS (Linux Unified Key Setup) is the standard on-disk format for encrypted volu
 | **LUKS** | The **header** at the start of the disk. It records how the volume is encrypted and how to unlock it. |
 | **cryptsetup** | The command-line tool that manages both. |
 
+The **dm** in dm-crypt stands for **device mapper**, the part of the Linux kernel that creates virtual block devices layered on top of real ones. dm-crypt is the device-mapper module ("target") that encrypts. This is why an opened volume appears under `/dev/mapper/`, and why the low-level tool for inspecting it is called `dmsetup`.
+
 dm-crypt on its own has no memory: every time you open a volume you would have to tell it the cipher, the key size and the key. LUKS solves that by writing those details (and a protected copy of the key) onto the disk itself, so opening a volume only needs a passphrase.
 
 ## What LUKS protects
