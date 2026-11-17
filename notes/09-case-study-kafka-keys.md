@@ -1,6 +1,6 @@
 # Case study, part 2: how the keys work on the Kafka broker
 
-[← Home](../README.md) · Part 1: [The layers on a Kafka broker](case-study-kafka-broker.md) · Part 3: [Rotating the keyfile](case-study-kafka-key-rotation.md) · Related: [Lesson 2](02-master-key.md), [Lesson 3](03-keyslots.md), [Lesson 4](04-key-derivation.md)
+[← Home](../README.md) · Part 1: [The layers on a Kafka broker](08-case-study-kafka-broker.md) · Part 3: [Rotating the keyfile](10-case-study-kafka-key-rotation.md) · Related: [Lesson 2](02-master-key.md), [Lesson 3](03-keyslots.md), [Lesson 4](04-key-derivation.md)
 
 Part 1 covered the layers from `/dev/sdb` up to `/data/kafka`. This part follows the keys: what happens when the disk is formatted, what happens every time it is opened, and what the LUKS header does and does not hold.
 

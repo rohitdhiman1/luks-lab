@@ -25,7 +25,7 @@ A keyslot does not care what unlocks it. A **keyfile** is simply a file whose co
 
 ## The full picture
 
-[Case study: how the keys work on the Kafka broker](case-study-kafka-keys.md) explains what is inside a keyslot and how it is locked and opened.
+[Case study: how the keys work on the Kafka broker](09-case-study-kafka-keys.md) explains what is inside a keyslot and how it is locked and opened.
 
 ## Try it
 

@@ -32,8 +32,8 @@ Work down the table. Read the lesson, then do the lab.
 | 8 | | [Lab 8: Re-encrypt (rotate the master key)](labs/08-reencrypt.md) |
 | 9 | [Lesson 4: Key derivation](notes/04-key-derivation.md) | [Lab 9: Performance and cipher choices](labs/09-performance-and-ciphers.md) |
 | 10 | [Lesson 7: LUKS1 vs LUKS2](notes/07-luks1-vs-luks2.md) | [Lab 10: Unlocking at boot (reading only)](labs/10-unlock-at-boot.md) |
-| 11 | [Case study, part 3: rotating the keyfile](notes/case-study-kafka-key-rotation.md) | [Lab 11: Rotate a keyfile safely](labs/11-rotate-a-keyfile.md) |
-| 12 | [Case study, part 4: escrow and recovery](notes/case-study-kafka-recovery.md) | [Lab 12: Recover a locked-out disk](labs/12-recover-a-locked-out-disk.md) |
+| 11 | [Case study, part 3: rotating the keyfile](notes/10-case-study-kafka-key-rotation.md) | [Lab 11: Rotate a keyfile safely](labs/11-rotate-a-keyfile.md) |
+| 12 | [Case study, part 4: escrow and recovery](notes/11-case-study-kafka-recovery.md) | [Lab 12: Recover a locked-out disk](labs/12-recover-a-locked-out-disk.md) |
 
 Labs 1 to 6 and Lab 8 build on the same `disk.img`, so do them in order and in one container session. Labs 7, 9, 11 and 12 stand alone.
 
@@ -51,10 +51,10 @@ Short concept notes, in [`notes/`](notes/).
 
 ### Case studies
 
-- [An encrypted data disk on a Kafka broker](notes/case-study-kafka-broker.md): the same layers on a real server, and why an always-open volume is not a security hole ([interactive diagram](https://claude.ai/artifact/2jhNWFwR22CwCurmvsK35t))
-- [How the keys work on the Kafka broker](notes/case-study-kafka-keys.md): what format and open do, what the header holds, with flowcharts
-- [Rotating the keyfile on the Kafka broker](notes/case-study-kafka-key-rotation.md): why it takes seconds, and the add, test, remove procedure
-- [Escrow and recovery on the Kafka broker](notes/case-study-kafka-recovery.md): the header and the master key as two paths back to the data
+- [An encrypted data disk on a Kafka broker](notes/08-case-study-kafka-broker.md): the same layers on a real server, and why an always-open volume is not a security hole ([interactive diagram](https://claude.ai/artifact/2jhNWFwR22CwCurmvsK35t))
+- [How the keys work on the Kafka broker](notes/09-case-study-kafka-keys.md): what format and open do, what the header holds, with flowcharts
+- [Rotating the keyfile on the Kafka broker](notes/10-case-study-kafka-key-rotation.md): why it takes seconds, and the add, test, remove procedure
+- [Escrow and recovery on the Kafka broker](notes/11-case-study-kafka-recovery.md): the header and the master key as two paths back to the data
 
 ## Labs
 

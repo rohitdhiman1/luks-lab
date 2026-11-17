@@ -1,6 +1,6 @@
 # Case study, part 4: escrow and recovery on the Kafka broker
 
-[← Home](../README.md) · Part 1: [The layers](case-study-kafka-broker.md) · Part 2: [How the keys work](case-study-kafka-keys.md) · Part 3: [Rotating the keyfile](case-study-kafka-key-rotation.md) · Hands-on: [Lab 12](../labs/12-recover-a-locked-out-disk.md)
+[← Home](../README.md) · Part 1: [The layers](08-case-study-kafka-broker.md) · Part 2: [How the keys work](09-case-study-kafka-keys.md) · Part 3: [Rotating the keyfile](10-case-study-kafka-key-rotation.md) · Hands-on: [Lab 12](../labs/12-recover-a-locked-out-disk.md)
 
 A broker's data disk is healthy and the data on it is intact, but nobody can open it. The keyfile is lost, or a keyslot was removed by mistake, or the header was overwritten. This part covers what can still be done, and what has to be prepared beforehand for anything to be possible.
 
@@ -90,7 +90,7 @@ None of these can be created after access is lost; they must be prepared while t
 | **A header backup** (plus a key that opens it) | A damaged or erased header | Must be retaken after every keyslot change. Old backups keep old keys alive |
 | **The master key** (plus the settings) | Loss of every keyslot, or of the header itself | Cannot be revoked. Whoever gets it bypasses every keyslot |
 
-The difference that matters is revocability. A leaked recovery key is removed and replaced in seconds ([part 3](case-study-kafka-key-rotation.md)). A leaked master key can only be dealt with by re-encrypting the whole disk ([Lab 8](../labs/08-reencrypt.md)).
+The difference that matters is revocability. A leaked recovery key is removed and replaced in seconds ([part 3](10-case-study-kafka-key-rotation.md)). A leaked master key can only be dealt with by re-encrypting the whole disk ([Lab 8](../labs/08-reencrypt.md)).
 
 Exporting the master key and recording the settings:
 

@@ -35,7 +35,7 @@ To grow an encrypted filesystem you resize from the outside in: the underlying d
 
 ## On a real server
 
-[Case study: an encrypted data disk on a Kafka broker](case-study-kafka-broker.md) shows this same stack with a physical disk in place of the image file.
+[Case study: an encrypted data disk on a Kafka broker](08-case-study-kafka-broker.md) shows this same stack with a physical disk in place of the image file.
 
 ## Try it
 

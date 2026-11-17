@@ -1,6 +1,6 @@
 # Case study: an encrypted data disk on a Kafka broker
 
-[← Home](../README.md) · Part 2: [How the keys work](case-study-kafka-keys.md) · Related: [Lesson 1](01-what-is-luks.md), [Lesson 6: The layers](06-the-layers.md)
+[← Home](../README.md) · Part 2: [How the keys work](09-case-study-kafka-keys.md) · Related: [Lesson 1](01-what-is-luks.md), [Lesson 6: The layers](06-the-layers.md)
 
 The lab uses a file as a fake disk. This case study shows the same layers on a real server, using a common setup: a Kafka broker that stores its data on a dedicated disk encrypted with LUKS.
 

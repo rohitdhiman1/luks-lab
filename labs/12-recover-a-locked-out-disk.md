@@ -4,7 +4,7 @@
 
 **Goal:** lose access to a disk in two different ways, and get the data back by two different routes: a header backup, and the master key on its own.
 
-**Read first:** [Case study, part 4: escrow and recovery](../notes/case-study-kafka-recovery.md)
+**Read first:** [Case study, part 4: escrow and recovery](../notes/11-case-study-kafka-recovery.md)
 
 **Before you start:** a shell inside the lab container. This lab builds its own disk and does not depend on earlier labs.
 

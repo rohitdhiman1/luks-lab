@@ -38,7 +38,7 @@ The header does not have to live on the data disk. With `--header <file>` it is 
 
 ## When the master key is kept elsewhere
 
-"Lose the header, lose the data" holds when the header was the only place the master key existed, which is the usual case. If the master key was exported beforehand, the data can still be reached without the header. See [Case study, part 4: escrow and recovery](case-study-kafka-recovery.md).
+"Lose the header, lose the data" holds when the header was the only place the master key existed, which is the usual case. If the master key was exported beforehand, the data can still be reached without the header. See [Case study, part 4: escrow and recovery](11-case-study-kafka-recovery.md).
 
 ## Try it
 

@@ -4,7 +4,7 @@
 
 **Goal:** replace the keyfile on a live, mounted volume without ever risking the data: add the new key, prove it works, and only then remove the old one.
 
-**Read first:** [Case study, part 3: rotating the keyfile](../notes/case-study-kafka-key-rotation.md), [Lesson 3: Keyslots](../notes/03-keyslots.md)
+**Read first:** [Case study, part 3: rotating the keyfile](../notes/10-case-study-kafka-key-rotation.md), [Lesson 3: Keyslots](../notes/03-keyslots.md)
 
 **Before you start:** a shell inside the lab container. This lab builds its own disk and does not depend on earlier labs.
 

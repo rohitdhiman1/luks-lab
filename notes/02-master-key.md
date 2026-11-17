@@ -21,7 +21,7 @@ The header stores a **digest**: a fingerprint of the master key. When a passphra
 
 ## The full picture
 
-[Case study: how the keys work on the Kafka broker](case-study-kafka-keys.md) walks through format and open step by step, with flowcharts.
+[Case study: how the keys work on the Kafka broker](09-case-study-kafka-keys.md) walks through format and open step by step, with flowcharts.
 
 ## Try it
 
