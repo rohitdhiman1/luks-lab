@@ -58,7 +58,31 @@ The second-to-last row is the one that catches people: a perfectly healthy disk 
 
 ## Escrow: preparing while the disk is healthy
 
-Escrow means keeping a copy of something that can recover the data, somewhere away from the server. None of these can be created after access is lost.
+### What "escrow" means
+
+**Escrow** is an everyday word borrowed from law and finance. Something valuable is handed to a trusted third party, who holds it and releases it only under agreed conditions. When you buy a house, for example, the money often sits with an escrow agent until both sides have done what they promised.
+
+**Key escrow** applies the same idea to encryption keys. A copy of a key, or of something that can recover it, is deposited with a trusted keeper, separate from the system it protects. The keeper hands it back only when a recovery is genuinely needed and properly authorised.
+
+In practice the "trusted keeper" is usually:
+
+- a secrets vault or key-management service (for example HashiCorp Vault or a cloud provider's KMS)
+- a hardware security module (HSM)
+- for small setups, a sealed envelope in a safe, with access logged
+
+Three properties make it escrow and not just "a copy somewhere":
+
+| Property | Why it matters |
+|---|---|
+| **Kept away from the server** | Whatever destroys the server's disk or header cannot destroy the escrowed copy too |
+| **Held by a trusted keeper** | The copy is protected at least as well as the data it can unlock |
+| **Released only under agreed conditions** | Retrieval is a deliberate, authorised, recorded act, not something anyone can do on a whim |
+
+On the Kafka broker, escrow answers one question: if every key on the server is lost tomorrow, what is held somewhere else that would let us get the data back?
+
+### What can be escrowed
+
+None of these can be created after access is lost; they must be prepared while the disk is healthy.
 
 | What is escrowed | Recovers from | Drawback |
 |---|---|---|
