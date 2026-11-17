@@ -6,6 +6,8 @@ The lab uses a file as a fake disk. This case study shows the same layers on a r
 
 The server has two disks. `sda` is the small one holding the operating system. `sdb` is the large one for Kafka's data. Kafka is configured to write under `/data/kafka`.
 
+> **Interactive version:** [Kafka Disk Stack](https://claude.ai/artifact/2jhNWFwR22CwCurmvsK35t) lets you click through each layer and step through how the stack is built, how a write travels down it, and what happens at boot.
+
 ## The four layers
 
 ```

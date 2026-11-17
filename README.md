@@ -51,7 +51,7 @@ Short concept notes, in [`notes/`](notes/).
 
 ### Case studies
 
-- [An encrypted data disk on a Kafka broker](notes/case-study-kafka-broker.md): the same layers on a real server, and why an always-open volume is not a security hole
+- [An encrypted data disk on a Kafka broker](notes/case-study-kafka-broker.md): the same layers on a real server, and why an always-open volume is not a security hole ([interactive diagram](https://claude.ai/artifact/2jhNWFwR22CwCurmvsK35t))
 - [How the keys work on the Kafka broker](notes/case-study-kafka-keys.md): what format and open do, what the header holds, with flowcharts
 - [Rotating the keyfile on the Kafka broker](notes/case-study-kafka-key-rotation.md): why it takes seconds, and the add, test, remove procedure
 - [Escrow and recovery on the Kafka broker](notes/case-study-kafka-recovery.md): the header and the master key as two paths back to the data
